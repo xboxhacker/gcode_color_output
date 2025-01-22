@@ -1,14 +1,17 @@
 # G-code Color Output
-Simple python script to take a 3d printing gcode file and colorize the printing sections. This will make it a little easier to read and edit the gcode file. ie. Inner wall, outter wall ... etc.
+Simple python script to take a 3d printing gcode file and colorize the printing sections. This will make it a little easier to read and edit the gcode file, ie. Inner wall, outter wall ... etc.
 
 ## Features
 
 - Open and process G-code files.
-- Color-code different `;TYPE:` sections. <~ OrcaSlicer output
-- Display the G-code in a resizable window.
+- Color-coded different `;TYPE:` sections. <~ OrcaSlicer output
+- Display the G-code in a resizable and editable window.
 - List `;TYPE:` sections with their colors for easy reference.
 - Highlights every `;TYPE:` section when picked from list list box.
 - Next Section button jumps the output window to the next highlighted section.
+- Save the edited file from the output window.
+
+*NOTE: The saved output file will be exported as black text only.*
 
 ## Requirements
 
@@ -24,7 +27,7 @@ Simple python script to take a 3d printing gcode file and colorize the printing 
 1. Run the script using Python:
 
     ```bash
-    python gcode_processor.py
+    python gcode_color_output.py
     ```
 
 2. Click the "Open G-code File" button to open a `.gcode` file.
